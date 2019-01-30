@@ -1,0 +1,81 @@
+<form [formGroup]="form" (ngSubmit)="saveSearch($event)">
+
+<div class="searchbar">
+<input type="text" formControlName="search" name="search" placeholder="search">
+
+<button class="btn btn-danger" >OK</button>
+</div>
+</form>
+
+<div class="jumbotron jumbotron-fluid" *ngIf="empty">
+    <div class="container">
+      <h1 class="display-4 titel">{{showForm.town}}</h1>
+      <p class="lead"></p>
+    </div>
+  </div>
+  
+  
+  <div class="containertb" *ngIf="empty">
+      <div class="row">
+        <div class="col">Skiarea: {{showForm.skiarea}}</div>
+        <div class="col">Size Skiarea: {{showForm.sizeskiarea}} KM</div>
+        <div class="w-100"></div>
+        <div class="col">Snowheight: {{showForm.snowheight}} CM</div>
+        <div class="col">Lifts opened: {{showForm.liftsopened}}</div>
+      
+      </div>
+    </div>
+  
+
+    <div class="text-center" *ngIf="empty">
+        <h2 class="titel1">Impression</h2>
+      <img src="{{showForm.foto}}" class="rounded" alt="...">
+    </div>
+    <div class="text-center" *ngIf="empty">
+        <h2 class="titel1">Map Skiarea</h2>
+      <img src="{{showForm.mapskiarea}}" class="rounded" alt="...">
+    </div>
+
+
+    <div class="jumbotron2 jumbotron-fluid" *ngIf="full">
+        <div class="container">
+          <h1 class="display-4 titel">Welcome</h1>
+          <p class="lead"></p>
+        </div>
+      </div>
+
+      <div class="containertb1" *ngIf="full">
+          <div class="row">
+            
+          </div>
+        </div>
+
+
+
+
+
+    <!-- <div class="text-center" *ngIf="full">
+        <h2 class="titel1">Welcome</h2>
+      <img src="../../assets/4K-Snow-Desktop-Wallpaper.jpg" class="rounded" alt="...">
+    </div> -->
+
+
+
+    <!-- foto's naast elkaar -->
+    <!-- <div class="plaatsing" *ngIf="full">
+    <img src="{{showForm.mapskiarea}}" class="rounded float-left" alt="...">
+    <img src="{{showForm.foto}}" class="rounded float-right" alt="...">
+    </div> -->
+
+
+
+
+
+
+    
+   
+    
+
+    
+
+    

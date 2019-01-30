@@ -1,0 +1,68 @@
+.searchbar{
+    text-align: center;
+    background-color:  rgba(167, 41, 41, 0.829);
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url("../../assets/4K-Snow-Desktop-Wallpaper.jpg");
+    background-position: 0% 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(3, 3, 3);
+    /* text-shadow: black 0.3em 0.3em 0.3em; */
+}
+.jumbotron2 {
+    margin-bottom: 0px;
+    background-image: url("../../assets/4K-Snow-Desktop-Wallpaper.jpg");
+    background-position: 0% 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(3, 3, 3);
+    height: 600px;
+    text-align: center;
+
+}
+
+.titel{
+    position: static;
+    font-weight: bold;
+    color: rgba(167, 41, 41, 0.829);
+    text-align: center;
+
+}
+  
+img {
+    width: 1000px; 
+    height: 1000px;
+    object-fit: cover;
+}  
+ 
+.containertb{
+background-color:  rgba(167, 41, 41, 0.829);
+margin-bottom: 0px;
+color: rgb(36, 48, 155);
+font-size: 150%;
+font-weight: bold;
+text-align: center;
+
+}
+/* .plaatsing{
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 10;
+    background-color:  rgba(167, 41, 41, 0.829);
+} */
+.text-center{
+    background-color:  rgba(167, 41, 41, 0.829);
+
+}
+.containertb1{
+    background-color:  rgba(167, 41, 41, 0.829);
+    margin-bottom: 0px;
+    color: rgb(36, 48, 155);
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    
+    }

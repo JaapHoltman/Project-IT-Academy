@@ -1,0 +1,73 @@
+<div class="jumbotron">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 offset-md-3">
+              <h3>Database filler</h3>
+              <form [formGroup]="form" (ngSubmit)="saveForm($event)">
+
+                <div class="form-group">
+                   <label>Town</label>
+                   <input type="text" formControlName="town" class="form-control" />
+                  </div>
+                <div class="form-group">
+                   <label>Ski-area</label>
+                   <input type="text" formControlName="skiarea" class="form-control" />
+                  </div>
+                <div class="form-group">
+                   <label>Size skiarea</label>
+                   <input type="text" formControlName="sizeskiarea" class="form-control" />
+                  </div>
+                <div class="form-group">
+                    <label>Map skiarea</label>
+                    <input type="text" formControlName="mapskiarea" class="form-control" />
+                  </div>
+                <div class="form-group">
+                    <label>Lifts opened</label>
+                    <input type="text" formControlName="liftsopened" class="form-control" />
+                  </div>
+                <div class="form-group">
+                    <label>Foto</label>
+                    <input type="text" formControlName="foto" class="form-control" />
+                  </div>
+               <div class="form-group">
+                  <label>Snowheight</label>
+                  <input type="text" formControlName="snowheight" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.snowheight.errors }" />
+                    <div *ngIf="submitted && f.snowheight.errors" class="invalid-feedback">
+                        <div *ngIf="f.snowheight.errors.required">Must be a number</div>
+                        <div *ngIf="f.snowheight.errors.pattern">Snowheight must be a number charactar</div>
+                    </div>
+                </div>
+
+                  <div class="form-group">
+                      <button class="btn btn-primary"
+                      [disabled]= 'form.invalid'
+                      >Submit</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- oude versie, ff voor de zekerheid bewaard -->
+<!-- <form [formGroup]="form" (ngSubmit)="saveForm($event)">
+
+  
+  <input type="text" formControlName="town" name="town" placeholder="town"><br>
+  <input type="text" formControlName="skiarea" name="skiarea" placeholder="skiarea"><br>
+  <input type="text" formControlName="sizeskiarea" name="sizeskiarea" placeholder="sizeskiarea"><br>
+  <input type="text" formControlName="snowheight" name="snowheight" placeholder="snowheight"><br>
+  <input type="text" formControlName="mapskiarea" name="mapskiarea" placeholder="mapskiarea"><br>
+  <input type="text" formControlName="liftsopened" name="liftsopened" placeholder="liftsopened"><br>
+  <input type="text" formControlName="foto" name="foto" placeholder="foto"><br>
+
+
+  
+  <button class="btn btn-danger" >OK</button>
+   -->
